@@ -1,0 +1,53 @@
+{
+  "name": "node-scheduler",
+  "version": "0.0.0",
+  "description": "Facebook post scheduler build with Node.js",
+  "scripts": {
+    "dev-server": "nodemon server.js --config nodemon.json",
+    "watch": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.13.2",
+    "bootstrap": "^4.1.1",
+    "config": "^1.30.0",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.3.5",
+    "cron": "^1.3.0",
+    "ejs": "^2.3.3",
+    "express": "^4.13.1",
+    "express-fileupload": "^0.4.0",
+    "express-session": "^1.11.3",
+    "fb": "^2.0.0",
+    "jquery": "^3.3.1",
+    "moment": "^2.22.2",
+    "mongoose": "^5.1.4",
+    "morgan": "^1.6.1",
+    "passport": "^0.2.2",
+    "passport-facebook": "^2.0.0",
+    "path": "^0.12.7",
+    "popper.js": "^1.14.3",
+    "random-string": "^0.2.0",
+    "randomstring": "^1.1.5",
+    "react": "^16.4.0",
+    "react-datetime-picker": "^1.3.1",
+    "react-dom": "^16.4.0",
+    "toastr": "^2.1.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "mini-css-extract-plugin": "^0.4.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "session-file-store": "^1.2.0",
+    "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.11.1",
+    "webpack-cli": "^3.0.3"
+  }
+}

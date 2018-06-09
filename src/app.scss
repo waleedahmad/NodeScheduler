@@ -1,0 +1,47 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~toastr/toastr.scss';
+@import url('https://fonts.googleapis.com/css?family=Abel|Montserrat');
+
+html,body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  width: 100%;
+  margin : 0px;
+  padding : 0px;
+}
+
+body{
+  padding-top: 56px;
+
+  .app{
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    .scheduler{
+      .row div{
+        float:left;
+      }
+    }
+
+    .scheduled-posts{
+      .post{
+        margin-bottom : 10px;
+
+        .actions{
+          display: none;
+        }
+
+        &:hover{
+          .actions{
+            display: block;
+          }
+        }
+      }
+    }
+
+    .react-datetime-picker__clock,
+    .react-datetime-picker__calendar{
+      z-index: 10;
+    }
+  }
+}

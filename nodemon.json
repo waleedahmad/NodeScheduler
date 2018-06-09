@@ -1,0 +1,4 @@
+{
+  "verbose": true,
+  "ignore": ["./src", "./public", "./sessions", "./views", "./media"]
+}

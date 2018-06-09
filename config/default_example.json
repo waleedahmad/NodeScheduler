@@ -1,0 +1,7 @@
+{
+  "appId" : "YOUR_APP_KEY",
+  "appSecret" : "YOUR_APP_SECRET",
+  "sessionSecret" : "EXPRESS_SESSION_SECRET",
+  "callbackURL" : "https://127.0.0.1:8888/auth/facebook/callback",
+  "scheduler_timezone" : "Asia/Karachi"
+}

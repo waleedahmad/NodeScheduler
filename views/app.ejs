@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<% include header.ejs %>
+
+<body>
+<% include navbar.ejs %>
+
+<div class="container app">
+<% if (!user) { %>
+    <h3>Welcome!</h3>
+    <div class="leader">
+        Please <a href="/login">login</a> to use posts scheduler
+    </div>
+<% } else { %>
+    <div id="root"></div>
+<% } %>
+</div>
+
+<% include footer.ejs %>
+</body>
+</html>
