@@ -33,9 +33,6 @@ $ cp ./config/default_example.json ./config/default.json
 $ npm run dev-server
 ```
 
-### Demo
-
-####Login
 ![alt text](https://i.imgur.com/kPIHYCZ.png)
 
 ![alt text](https://i.imgur.com/zeCQXFb.png)
