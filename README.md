@@ -39,8 +39,5 @@ $ npm run dev-server
 
 ![alt text](https://i.imgur.com/dYHuo7t.png)
 
-![alt text](https://i.imgur.com/KcjSXQh.png)
-
-
 
 
