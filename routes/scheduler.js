@@ -101,7 +101,7 @@ router.delete('/schedule',
     (req, res) => {
         Post.findByIdAndRemove(req.query.id, (err, post) => {
             if(post.type_of === 'photo'){
-                fs.unlink(__dirname + post.media, (err) => {
+                fs.unlink(path.join(__dirname, '../', post.media), (err) => {
                     if(err) return console.log(err);
                     res.json({done : true})
                 });
@@ -158,6 +158,10 @@ const createPost = (query, options, post, res) => {
             post : doc
         });
     });
+};
+
+const removeMedia = (id) => {
+
 };
 
 module.exports = router;

@@ -21,6 +21,12 @@ body{
       .row div{
         float:left;
       }
+
+      .date-picker{
+        float:none;
+        clear:both;
+        display: block;
+      }
     }
 
     .scheduled-posts{

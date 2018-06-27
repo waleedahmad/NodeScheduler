@@ -40,11 +40,18 @@ class Scheduler extends React.Component {
     }
 
     onPageSelect(e){
-        this.setState({
-            page : this.state.pages.filter(page => {
-                return page.id === e.target.value
-            })[0]
-        })
+        if(e.target.value.length){
+            this.setState({
+                page : this.state.pages.filter(page => {
+                    return page.id === e.target.value
+                })[0]
+            })
+        }else{
+            this.setState({
+                page : {id : '', name : ''}
+            })
+        }
+
     }
 
     validateFile(file) {
@@ -76,7 +83,7 @@ class Scheduler extends React.Component {
             );
         }
 
-        if(!Object.keys(this.state.page).length){
+        if(!this.state.page.id.length){
             error = true;
             toastr.error(
                 'Please select a page or profile from dropdown menu',
@@ -162,7 +169,7 @@ class Scheduler extends React.Component {
                                     className="form-control"
                                     value={this.state.page.id}
                                     onChange={this.onPageSelect.bind(this)}>
-                                    <option>Select Page</option>
+                                    <option value={''}>Select Page</option>
                                     {this.state.pages.map(page => {
                                         return (
                                             <option
@@ -177,13 +184,13 @@ class Scheduler extends React.Component {
                         </div>
 
                         <div className="col-lg-4 col-md-4">
-                            <div className="form-group">
+                            <div className="form-group w-100">
                                 <label>
                                     <h5>
                                         Publish Time
                                     </h5>
                                 </label>
-                                <div>
+                                <div className="date-picker w-100">
                                     <DateTimePicker
                                         onChange={this.onDateChange.bind(this)}
                                         value={this.state.date}
