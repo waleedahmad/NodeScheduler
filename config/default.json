@@ -1,7 +1,0 @@
-{
-  "appId" : "235211740587092",
-  "appSecret" : "e492f4fbcecbb7cfc5c612604a2abda4",
-  "sessionSecret" : "Keyboard Cat",
-  "callbackURL" : "https://127.0.0.1:8888/login/facebook/callback",
-  "scheduler_timezone" : "Asia/Karachi"
-}

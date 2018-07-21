@@ -9,6 +9,7 @@ npm-debug.log
 sessions/
 public/
 certs/
+config/default.json
 # exclude everything
 media/*
 
